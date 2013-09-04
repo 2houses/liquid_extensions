@@ -1,5 +1,9 @@
 require 'locomotivecms_solid'
 
-%w{tags filters}.each do |dir|
-  Dir[File.join(File.dirname(__FILE__), 'liquid_extensions', dir, '*.rb')].each { |lib| require lib }
-end
+require 'liquid_extensions/filters/text'
+require 'liquid_extensions/tags/base_asset_tag'
+require 'liquid_extensions/tags/common_footer'
+require 'liquid_extensions/tags/common_header'
+require 'liquid_extensions/tags/common_javascript_include_tag'
+require 'liquid_extensions/tags/common_sign_up_form'
+require 'liquid_extensions/tags/common_stylesheet_tag'
