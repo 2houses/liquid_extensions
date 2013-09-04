@@ -8,7 +8,7 @@ module LiquidExtensions
         if wagon
           "<!-- Common stylesheet here -->"
         else
-          helpers.stylesheet_link_tag("common/header", "common/footer", :media => :all)
+          helpers.stylesheet_link_tag("common/header", "common/footer", "common/sign_up_form", :media => :all)
         end
       end
 
