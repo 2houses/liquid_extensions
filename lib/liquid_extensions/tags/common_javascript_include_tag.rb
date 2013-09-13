@@ -8,7 +8,7 @@ module LiquidExtensions
         if wagon
           "<!-- Common javascript here -->"
         else
-          helpers.javascript_include_tag("common/header")
+          helpers.javascript_include_tag("common/header", "common/jquery.adjustable-menu")
         end
       end
 
